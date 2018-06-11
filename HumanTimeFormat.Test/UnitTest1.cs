@@ -38,5 +38,13 @@ namespace HumanTimeFormat.Test
 
             result.Should().Be("2 Seconds");
         }
+        
+        [Test]
+        public void Input_60_ShouldBe_1_Minute()
+        {
+            var result = humanTimer.ToHumanTime(60);
+
+            result.Should().Be("1 Minute");
+        }
     }
 }
