@@ -1,0 +1,11 @@
+
+*.dll
+
+*.pdb
+
+*.dll
+
+/HumanTimeFormat/obj/*
+/HumanTimeFormat/bin/*
+/HumanTimeFormat.Test/obj/*
+/HumanTimeFormat.Test/bin/*
