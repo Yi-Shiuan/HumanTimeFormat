@@ -10,8 +10,8 @@ namespace HumanTimeFormat
             }
             
             var result = string.Empty;
-            var hour = time / 3600;
             
+            var hour = time / 3600;
             if (hour >= 1)
             {
                 time %= 3600;
