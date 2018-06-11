@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.InteropServices;
 
 namespace HumanTimeFormat
@@ -11,44 +13,28 @@ namespace HumanTimeFormat
             {
                 return "now";
             }
-            
-            var timeUnit = new List<string>();
-            
-            var hour = time / 3600;
-            if (hour > 0)
-            {
-                time %= 3600;
-                timeUnit.Add(HumanTimeUnitFormat(hour, "Hour"));
-            }
-            
-            var min = time / 60;
-            if (min > 0)
-            {
-                time %= 60;
-                timeUnit.Add(HumanTimeUnitFormat(min, "Minute"));
-            }
-            
-            if (time > 0)
-            {
-                timeUnit.Add(HumanTimeUnitFormat(time, "Second"));
-            }
 
-            if (timeUnit.Count == 3)
+            var timeUnit = new[]
             {
-                return $"{timeUnit[0]}, {timeUnit[1]} And {timeUnit[2]}";
+                HumanTimeUnitFormat(3600, "Hour", ref time),
+                HumanTimeUnitFormat(60, "Minute", ref time),
+                HumanTimeUnitFormat(1, "Second", ref time)
+            }.Where(x=> !string.IsNullOrEmpty(x)).ToList();
+
+
+            if (timeUnit.Count == 1)
+            {
+                return timeUnit[0];
             }
             
-            if(timeUnit.Count == 2)
-            {
-                return $"{timeUnit[0]} And {timeUnit[1]}";
-            }
-
-            return timeUnit[0];
+            return string.Join(", ", timeUnit.Take(timeUnit.Count - 1)) + " And " + timeUnit[timeUnit.Count - 1];
         }
 
-        private string HumanTimeUnitFormat(int count, string unit)
+        private string HumanTimeUnitFormat(int timeBox, string unit, ref int time)
         {
-            return $"{count} {unit}{(count > 1 ? "s" : string.Empty)}";
+            var t = time / timeBox;
+            time %= timeBox;
+            return t > 0 ? $"{t} {unit}{(t > 1 ? "s" : string.Empty)}" : string.Empty;
         }
     }
 }
