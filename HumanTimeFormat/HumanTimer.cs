@@ -4,6 +4,11 @@ namespace HumanTimeFormat.Test
     {
         public string ToHumanTime(int time)
         {
+            if (time > 0)
+            {
+                return $"{time} Second";
+            }
+            
             return "now";
         }
     }
