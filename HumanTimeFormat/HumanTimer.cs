@@ -19,7 +19,7 @@ namespace HumanTimeFormat
                 HumanTimeUnitFormat(3600, "Hour", ref time),
                 HumanTimeUnitFormat(60, "Minute", ref time),
                 HumanTimeUnitFormat(1, "Second", ref time)
-            }.Where(x=> !string.IsNullOrEmpty(x)).ToList();
+            }.Where(x => !string.IsNullOrEmpty(x)).ToList();
 
 
             if (timeUnit.Count == 1)
