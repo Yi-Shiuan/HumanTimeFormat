@@ -32,7 +32,7 @@ namespace HumanTimeFormat.Test
         }
         
         [Test]
-        public void Input_2_ShouldBe_2_second()
+        public void Input_2_ShouldBe_2_seconds()
         {
             var result = humanTimer.ToHumanTime(2);
 

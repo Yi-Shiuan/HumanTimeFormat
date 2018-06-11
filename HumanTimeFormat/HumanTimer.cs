@@ -6,7 +6,7 @@ namespace HumanTimeFormat.Test
         {
             if (time > 0)
             {
-                return $"{time} Second";
+                return $"{time} Second{(time > 1 ? "s" : string.Empty)}";
             }
             
             return "now";
