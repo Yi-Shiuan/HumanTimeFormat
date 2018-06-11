@@ -13,30 +13,38 @@ namespace HumanTimeFormat
             {
                 return "now";
             }
-
-            var timeUnit = new[]
+            var timeStrings = new List<string>();
+            var timeBoxs = new[]
             {
-                HumanTimeUnitFormat(31536000, "Year", ref time),
-                HumanTimeUnitFormat(86400, "Day", ref time),
-                HumanTimeUnitFormat(3600, "Hour", ref time),
-                HumanTimeUnitFormat(60, "Minute", ref time),
-                HumanTimeUnitFormat(1, "Second", ref time)
-            }.Where(x => !string.IsNullOrEmpty(x)).ToList();
-
-
-            if (timeUnit.Count == 1)
+                new TimeUnit {TimeSec = 31536000, Unit = "Year"},
+                new TimeUnit {TimeSec = 86400, Unit = "Day"},
+                new TimeUnit {TimeSec = 3600, Unit = "Hour"},
+                new TimeUnit {TimeSec = 60, Unit = "Minute"},
+                new TimeUnit {TimeSec = 1, Unit = "Second"}
+            };
+            
+            foreach (var timeBox in timeBoxs)
             {
-                return timeUnit[0];
+                if (!timeBox.HasUnit(time))
+                {
+                    continue;
+                }
+                
+                timeStrings.Add(timeBox.ToHumanReadableString(time));
+                time %= timeBox.TimeSec;
             }
             
-            return string.Join(", ", timeUnit.Take(timeUnit.Count - 1)) + " And " + timeUnit[timeUnit.Count - 1];
+            if (timeStrings.Count == 1)
+            {
+                return timeStrings[0];
+            }
+            
+            return ToHumanReadableTimeFormat(timeStrings);
         }
 
-        private string HumanTimeUnitFormat(int timeBox, string unit, ref int time)
+        private static string ToHumanReadableTimeFormat(List<string> timeUnit)
         {
-            var t = time / timeBox;
-            time %= timeBox;
-            return t > 0 ? $"{t} {unit}{(t > 1 ? "s" : string.Empty)}" : string.Empty;
+            return $"{string.Join(", ", timeUnit.Take(timeUnit.Count - 1))} And {timeUnit[timeUnit.Count - 1]}";
         }
     }
 }
