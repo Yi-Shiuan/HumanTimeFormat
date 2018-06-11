@@ -10,8 +10,16 @@ namespace HumanTimeFormat
             }
             
             var result = string.Empty;
-                var min = time / 60;
-            if (time >= 60)
+            var hour = time / 3600;
+            
+            if (hour >= 1)
+            {
+                time %= 3600;
+                result = HumanTimeUnitFormat(hour, "Hour");
+            }
+            
+            var min = time / 60;
+            if (min >= 1)
             {
                 time %= 60;
                 result = HumanTimeUnitFormat(min, "Minute");
