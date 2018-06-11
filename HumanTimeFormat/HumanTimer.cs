@@ -4,19 +4,30 @@ namespace HumanTimeFormat.Test
     {
         public string ToHumanTime(int time)
         {
+            if (time == 0)
+            {
+                return "now";
+            }
+            
             var result = string.Empty;
+                var min = time / 60;
             if (time >= 60)
             {
-                var min = time / 60;
-                return HumanTimeUnitFormat(min, "Minute");
+                time %= 60;
+                result = HumanTimeUnitFormat(min, "Minute");
             }
             
             if (time > 0)
             {
-                return HumanTimeUnitFormat(time, "Second");
+                if (min > 0)
+                {
+                    result = $"{result} And ";
+                }
+                
+                result = $"{result}{HumanTimeUnitFormat(time, "Second")}";
             }
             
-            return "now";
+            return result;
         }
 
         private string HumanTimeUnitFormat(int count, string unit)
