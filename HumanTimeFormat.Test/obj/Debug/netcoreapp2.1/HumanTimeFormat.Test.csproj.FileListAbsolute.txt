@@ -12,3 +12,7 @@
 /Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/obj/Debug/netcoreapp2.1/HumanTimeFormat.Test.csproj.CopyComplete
 /Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/obj/Debug/netcoreapp2.1/HumanTimeFormat.Test.dll
 /Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/obj/Debug/netcoreapp2.1/HumanTimeFormat.Test.pdb
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/bin/Debug/netcoreapp2.1/NUnit3.TestAdapter.dll
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/bin/Debug/netcoreapp2.1/NUnit3.TestAdapter.pdb
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/bin/Debug/netcoreapp2.1/nunit.engine.netstandard.dll
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/bin/Debug/netcoreapp2.1/Mono.Cecil.dll
