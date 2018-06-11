@@ -1,4 +1,4 @@
-namespace HumanTimeFormat.Test
+namespace HumanTimeFormat
 {
     public class HumanTimer
     {
