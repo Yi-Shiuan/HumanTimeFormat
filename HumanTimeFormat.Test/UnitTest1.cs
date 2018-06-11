@@ -74,7 +74,7 @@ namespace HumanTimeFormat.Test
         [Test]
         public void Input_3660_ShouldBe_1_Days()
         {
-            var result = humanTimer.ToHumanTime(24 * 60 * 60);
+            var result = humanTimer.ToHumanTime(86400);
 
             result.Should().Be("1 Day");
         }

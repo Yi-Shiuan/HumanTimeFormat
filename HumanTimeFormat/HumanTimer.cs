@@ -16,6 +16,7 @@ namespace HumanTimeFormat
 
             var timeUnit = new[]
             {
+                HumanTimeUnitFormat(86400, "Day", ref time),
                 HumanTimeUnitFormat(3600, "Hour", ref time),
                 HumanTimeUnitFormat(60, "Minute", ref time),
                 HumanTimeUnitFormat(1, "Second", ref time)
