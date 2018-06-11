@@ -86,5 +86,13 @@ namespace HumanTimeFormat.Test
 
             result.Should().Be("1 Day, 1 Hour, 1 Minute And 1 Second");
         }
+        
+        [Test]
+        public void Input_31536000_ShouldBe_1_Year()
+        {
+            var result = humanTimer.ToHumanTime(31536000);
+
+            result.Should().Be("1 Year");
+        }
     }
 }
