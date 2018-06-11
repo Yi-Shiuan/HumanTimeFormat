@@ -12,17 +12,22 @@ namespace HumanTimeFormat
             var result = string.Empty;
             
             var hour = time / 3600;
-            if (hour >= 1)
+            if (hour > 0)
             {
                 time %= 3600;
                 result = HumanTimeUnitFormat(hour, "Hour");
             }
             
             var min = time / 60;
-            if (min >= 1)
+            if (min > 0)
             {
+                if (hour > 0)
+                {
+                    result = $"{result} And ";
+                }
+                
                 time %= 60;
-                result = HumanTimeUnitFormat(min, "Minute");
+                result = $"{result}{HumanTimeUnitFormat(min, "Minute")}";
             }
             
             if (time > 0)
