@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanTimeFormat", "HumanTimeFormat\HumanTimeFormat.csproj", "{2910D912-6A34-47AB-AFB9-C6233577FAAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanTimeFormat.Test", "HumanTimeFormat.Test\HumanTimeFormat.Test.csproj", "{2C3303A7-9857-4BE6-9B0B-FB8A2D9D6531}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2910D912-6A34-47AB-AFB9-C6233577FAAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2910D912-6A34-47AB-AFB9-C6233577FAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2910D912-6A34-47AB-AFB9-C6233577FAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2910D912-6A34-47AB-AFB9-C6233577FAAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C3303A7-9857-4BE6-9B0B-FB8A2D9D6531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C3303A7-9857-4BE6-9B0B-FB8A2D9D6531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C3303A7-9857-4BE6-9B0B-FB8A2D9D6531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C3303A7-9857-4BE6-9B0B-FB8A2D9D6531}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

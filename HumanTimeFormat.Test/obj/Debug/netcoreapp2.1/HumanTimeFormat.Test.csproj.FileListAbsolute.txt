@@ -1,0 +1,14 @@
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/bin/Debug/netcoreapp2.1/HumanTimeFormat.Test.deps.json
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/bin/Debug/netcoreapp2.1/HumanTimeFormat.Test.runtimeconfig.json
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/bin/Debug/netcoreapp2.1/HumanTimeFormat.Test.runtimeconfig.dev.json
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/bin/Debug/netcoreapp2.1/HumanTimeFormat.Test.dll
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/bin/Debug/netcoreapp2.1/HumanTimeFormat.Test.pdb
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/bin/Debug/netcoreapp2.1/HumanTimeFormat.dll
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/bin/Debug/netcoreapp2.1/HumanTimeFormat.pdb
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/obj/Debug/netcoreapp2.1/HumanTimeFormat.Test.csprojAssemblyReference.cache
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/obj/Debug/netcoreapp2.1/HumanTimeFormat.Test.csproj.CoreCompileInputs.cache
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/obj/Debug/netcoreapp2.1/HumanTimeFormat.Test.AssemblyInfoInputs.cache
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/obj/Debug/netcoreapp2.1/HumanTimeFormat.Test.AssemblyInfo.cs
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/obj/Debug/netcoreapp2.1/HumanTimeFormat.Test.csproj.CopyComplete
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/obj/Debug/netcoreapp2.1/HumanTimeFormat.Test.dll
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat.Test/obj/Debug/netcoreapp2.1/HumanTimeFormat.Test.pdb

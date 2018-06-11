@@ -1,0 +1,9 @@
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat/bin/Debug/netcoreapp2.1/HumanTimeFormat.deps.json
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat/bin/Debug/netcoreapp2.1/HumanTimeFormat.dll
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat/bin/Debug/netcoreapp2.1/HumanTimeFormat.pdb
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat/obj/Debug/netcoreapp2.1/HumanTimeFormat.csprojAssemblyReference.cache
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat/obj/Debug/netcoreapp2.1/HumanTimeFormat.csproj.CoreCompileInputs.cache
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat/obj/Debug/netcoreapp2.1/HumanTimeFormat.AssemblyInfoInputs.cache
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat/obj/Debug/netcoreapp2.1/HumanTimeFormat.AssemblyInfo.cs
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat/obj/Debug/netcoreapp2.1/HumanTimeFormat.dll
+/Users/Yi-Shiuan/RiderProjects/HumanTimeFormat/HumanTimeFormat/obj/Debug/netcoreapp2.1/HumanTimeFormat.pdb
