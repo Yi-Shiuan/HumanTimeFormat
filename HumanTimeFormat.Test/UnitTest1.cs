@@ -30,5 +30,13 @@ namespace HumanTimeFormat.Test
 
             result.Should().Be("1 Second");
         }
+        
+        [Test]
+        public void Input_2_ShouldBe_2_second()
+        {
+            var result = humanTimer.ToHumanTime(2);
+
+            result.Should().Be("2 Seconds");
+        }
     }
 }
