@@ -72,11 +72,19 @@ namespace HumanTimeFormat.Test
         }
         
         [Test]
-        public void Input_3660_ShouldBe_1_Days()
+        public void Input_86400_ShouldBe_1_Days()
         {
             var result = humanTimer.ToHumanTime(86400);
 
             result.Should().Be("1 Day");
+        }
+        
+        [Test]
+        public void Input_90061_ShouldBe_1_Days_1_Hour_1_Minute_1_Secound()
+        {
+            var result = humanTimer.ToHumanTime(86400 + 3600 + 60 + 1);
+
+            result.Should().Be("1 Day, 1 Hour, 1 Minute And 1 Second");
         }
     }
 }
