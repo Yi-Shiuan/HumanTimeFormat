@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
+
 namespace HumanTimeFormat
 {
     public class HumanTimer
@@ -9,38 +12,38 @@ namespace HumanTimeFormat
                 return "now";
             }
             
-            var result = string.Empty;
+            var timeUnit = new List<string>();
             
             var hour = time / 3600;
             if (hour > 0)
             {
                 time %= 3600;
-                result = HumanTimeUnitFormat(hour, "Hour");
+                timeUnit.Add(HumanTimeUnitFormat(hour, "Hour"));
             }
             
             var min = time / 60;
             if (min > 0)
             {
-                if (hour > 0)
-                {
-                    result = $"{result} And ";
-                }
-                
                 time %= 60;
-                result = $"{result}{HumanTimeUnitFormat(min, "Minute")}";
+                timeUnit.Add(HumanTimeUnitFormat(min, "Minute"));
             }
             
             if (time > 0)
             {
-                if (min > 0)
-                {
-                    result = $"{result} And ";
-                }
-                
-                result = $"{result}{HumanTimeUnitFormat(time, "Second")}";
+                timeUnit.Add(HumanTimeUnitFormat(time, "Second"));
+            }
+
+            if (timeUnit.Count == 3)
+            {
+                return $"{timeUnit[0]}, {timeUnit[1]} And {timeUnit[2]}";
             }
             
-            return result;
+            if(timeUnit.Count == 2)
+            {
+                return $"{timeUnit[0]} And {timeUnit[1]}";
+            }
+
+            return timeUnit[0];
         }
 
         private string HumanTimeUnitFormat(int count, string unit)

@@ -64,11 +64,11 @@ namespace HumanTimeFormat.Test
         }
         
         [Test]
-        public void Input_3660_ShouldBe_1_Hour_And_1_Minute()
+        public void Input_3660_ShouldBe_1_Hour_1_Minute_1_Second()
         {
-            var result = humanTimer.ToHumanTime(3660);
+            var result = humanTimer.ToHumanTime(3661);
 
-            result.Should().Be("1 Hour And 1 Minute");
+            result.Should().Be("1 Hour, 1 Minute And 1 Second");
         }
     }
 }
