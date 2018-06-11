@@ -8,15 +8,20 @@ namespace HumanTimeFormat.Test
             if (time >= 60)
             {
                 var min = time / 60;
-                return $"{min} Minute{(min > 1 ? "s" : string.Empty)}";
+                return HumanTimeUnitFormat(min, "Minute");
             }
             
             if (time > 0)
             {
-                return $"{time} Second{(time > 1 ? "s" : string.Empty)}";
+                return HumanTimeUnitFormat(time, "Second");
             }
             
             return "now";
+        }
+
+        private string HumanTimeUnitFormat(int count, string unit)
+        {
+            return $"{count} {unit}{(count > 1 ? "s" : string.Empty)}";
         }
     }
 }
