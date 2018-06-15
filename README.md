@@ -1,4 +1,5 @@
 # HumanTimeFormat
+[![JDD](https://img.shields.io/badge/JDD-Jed%20%E9%A9%85%E5%8B%95%E9%96%8B%E7%99%BC-red.svg)](https://github.com/jed1978)
 
 Your task in order to complete this Kata is to write a function which formats a duration, given as a number of seconds, in a human-friendly way.
 
